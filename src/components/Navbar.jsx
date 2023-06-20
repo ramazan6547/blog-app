@@ -63,29 +63,11 @@ function Navbar() {
               width: 50,
               height: 20,
             }}
-            // sx={{ width: 50, height: 20 }}
+       
           >
             <img src={clr} />
           </ImageListItem>
 
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -138,11 +120,7 @@ function Navbar() {
                 </Typography>
               </MenuItem>
 
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
+             
             </Menu>
           </Box>
         
@@ -161,7 +139,7 @@ function Navbar() {
               width: 50,
               height: 20,
             }}
-            // sx={{ width: 50, height: 20 }}
+            
           >
             <img src={clr} />
           </ImageListItem>
@@ -203,15 +181,7 @@ function Navbar() {
               ABOUT
             </Button>
 
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))} */}
+         
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -285,9 +255,7 @@ function Navbar() {
                 onClose={handleCloseUserMenu}
               >
                 <MenuItem
-                  // onClick={
-                  //   (handleCloseUserMenu, () => navigate("login"))
-                  // }
+                 
                   onClick={() => {
                     handleCloseUserMenu();
                     navigate("login");
@@ -304,21 +272,3 @@ function Navbar() {
   );
 }
 export default Navbar;
-
-{
-  /* <MenuItem
-                onClick={(handleCloseUserMenu, () => navigate("my-blogs"))}
-              >
-                <Typography textAlign="center">My Blogs</Typography>
-              </MenuItem>
-              <MenuItem
-                onClick={(handleCloseUserMenu, () => navigate("profile"))}
-              >
-                <Typography textAlign="center">Profile</Typography>
-              </MenuItem>
-              <MenuItem
-                onClick={(handleCloseUserMenu, () => navigate("logout"))}
-              >
-                <Typography textAlign="center">Logout</Typography>
-              </MenuItem> */
-}

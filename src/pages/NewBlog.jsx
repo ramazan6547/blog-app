@@ -72,7 +72,7 @@ const NewBlog = () => {
           p: 4,
         }}
       >
-        {/* //? Box componentine component="form" yazarak form özelliği kazandırıyoruz böyle onSubmit i burada kullanabiliyoruz.Onsubmit sorm da olması lazım!!! */}
+      
         <Box component="form" sx={flexColumn} onSubmit={handleSubmit}>
           <Typography variant="h6" noWrap component="div">
             New Blog
@@ -84,7 +84,7 @@ const NewBlog = () => {
             type="text"
             variant="outlined"
             required
-            //? info? buardakı optional cheining çok onemli çunku verı ılk olarak null geldiğinde hata verecektir.
+            
             value={info?.title || ""}
             onChange={handleChange}
           />
@@ -109,7 +109,7 @@ const NewBlog = () => {
               label="Category"
               onChange={handleChange}
             >
-              {/* //? categoris leri map ile dönerek MEnuitemleri bastık. selectler basılmış oldu. */}
+             
               {categories?.map((item) => (
                 <MenuItem key={item.id} value={item.id}>
                   {item.name}

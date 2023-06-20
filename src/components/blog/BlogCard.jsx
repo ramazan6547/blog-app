@@ -57,7 +57,6 @@ const BlogCard = ({ blog }) => {
           {blog.content.substring(0, 60) + "..."}
         </Typography>
         <Typography gutterBottom variant="body2" component="div">
-          {/* {blog.publish_date} */}
           {convertRelativeTime(blog.publish_date)}
         </Typography>
       </CardContent>

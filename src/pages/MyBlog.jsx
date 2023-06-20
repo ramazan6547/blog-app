@@ -11,9 +11,7 @@ export default function MyBlog() {
   const { getMyBlogsData } = useBlogCalls();
   const { myblogs, loading } = useSelector((state) => state.blog);
   const { id } = useSelector((state) => state.auth);
-  // console.log(id);
 
-  // console.log(myblogs);
 
   useEffect(() => {
     getMyBlogsData("blogs", id);
@@ -32,7 +30,7 @@ export default function MyBlog() {
             marginTop: 40,
             width: 400,
           }}
-          // sx={{ width: 50, height: 20 }}
+         
         >
           <img src={loadingGif} />
         </ImageListItem>

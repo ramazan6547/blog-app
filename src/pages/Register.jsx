@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import LockIcon from "@mui/icons-material/Lock";
 import { Formik } from "formik";
-// import image from "../assets/result.svg";
+
 import Grid from "@mui/material/Grid";
 import RegisterForm, { registerSchema } from "../components/auth/RegisterForm";
 import { Link } from "react-router-dom";
@@ -74,12 +74,6 @@ const Register = () => {
             <Link to="/login">Do you have an account?</Link>
           </Box>
         </Grid>
-
-        {/* <Grid item xs={0} sm={7} md={6}>
-          <Container>
-            <img src={image} alt="" />
-          </Container>
-        </Grid> */}
       </Grid>
     </Container>
   );

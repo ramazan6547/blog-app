@@ -10,11 +10,11 @@ import { useSelector } from "react-redux";
 
 const DeleteModal = ({ deleteOpen, setDeleteOpen, id }) => {
   const { deleteBlogsData, getMyBlogsData } = useBlogCalls();
-    // const { id:userId } = useSelector((state) => state.auth);
+
     const navigate = useNavigate();
   const handleDeleteBlog = () => {
     deleteBlogsData("blogs", id);
-    // getMyBlogsData("blogs", userId);
+ 
 
     navigate(-1);
   };

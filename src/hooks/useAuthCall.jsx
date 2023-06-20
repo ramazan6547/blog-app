@@ -28,7 +28,7 @@ const useAuthCall = () => {
       console.log(data)
       toastSuccessNotify("Login performed");
       navigate("/");
-      // console.log(data);
+     
     } catch (error) {
       dispatch(fetchFail());
       console.log(error);
@@ -70,4 +70,3 @@ const useAuthCall = () => {
 export default useAuthCall;
 
 
-//   // const BASE_URL = "https://12176.fullstack.clarusway.com/";

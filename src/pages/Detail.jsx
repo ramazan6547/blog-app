@@ -57,8 +57,7 @@ const Detail = () => {
   };
   const handleDeleteBlog = () => {
     setDeleteOpen(true)
-    // deleteBlogsData("blogs", id);
-    // navigate("/");
+    
   };
   const handleUpdateBlog = () => {
     setInfo(details);

@@ -65,7 +65,7 @@ const About = () => {
               width: 80,
               height: 50,
             }}
-            // sx={{ width: 50, height: 20 }}
+        
           >
             <img src={clr} />
           </ImageListItem>

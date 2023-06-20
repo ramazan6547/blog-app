@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import LockIcon from "@mui/icons-material/Lock";
-// import image from "../assets/result.svg";
+
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
 import useAuthCall from "../hooks/useAuthCall";
@@ -24,12 +24,7 @@ const Login = () => {
           p: 2,
         }}
       >
-        {/* <Grid item xs={12} mb={3}>
-          <Typography variant="h3" color="primary" align="center">
-            WELCOME YOUR WORLD
-          </Typography>
-        </Grid> */}
-
+       
         <Grid item xs={12} sm={10} md={6}>
           <Avatar
             sx={{
@@ -51,17 +46,15 @@ const Login = () => {
           </Typography>
           <Formik
             initialValues={{email: "", password: "" }}
-            //? loginScheme yi de Login componentin içinde tanımladık ve buraya import ettik.
-            //? import LoginForm, { loginScheme } from "../components/LoginForm";
+           
             validationSchema={loginScheme}
             onSubmit={(values, actions) => {
-              // console.log(values);
+            
               login(values);
               actions.resetForm();
               actions.setSubmitting(false);
             }}
-            // ? component çağırıyoruz.Form dan gelen her türlü stateleri,fonksiyonları, özellikleri(values, handleChange) props olarak veriyoruz.buradan açarak gönderiyoruz.diğer tarafta ihtiyacımız olanı alıyoruz.component içinde Form var.
-            //? import LoginForm, { loginScheme } from "../components/LoginForm";
+           
             component={(props) => <LoginForm {...props} />}
           ></Formik>
 
@@ -70,11 +63,7 @@ const Login = () => {
           </Box>
         </Grid>
 
-        {/* <Grid item xs={10} sm={7} md={6}>
-          <Container>
-            <img src={image} alt="img" />
-          </Container>
-        </Grid> */}
+      
       </Grid>
     </Container>
   );

@@ -24,21 +24,7 @@ const AppRouter = () => {
         <Route path="logout" element={<Dashboard />} />
         <Route path="register" element={<Register />} />
 
-        {/* <Route path="new-blog" element={<PrivateRouter />}>
-          <Route path="" element={<NewBlog />} />
-        </Route>
-        <Route path="profile" element={<PrivateRouter />}>
-          <Route path="" element={<Profile />} />
-        </Route>
-        <Route path="my-blogs" element={<PrivateRouter />}>
-          <Route path="" element={<MyBlog />} />
-        </Route>
-        <Route path="detail/:id" element={<PrivateRouter />}>
-          <Route path="" element={<Detail />} />
-        </Route> */}
-        {/* <Route path="my-blogs/detail/:id" element={<PrivateRouter />}>
-          <Route path="" element={<Detail />} />
-        </Route> */}
+       
         <Route path="" element={<PrivateRouter />}>
           <Route path="my-blogs/detail/:id" element={<Detail />} />
           <Route path="new-blog" element={<NewBlog />} />
